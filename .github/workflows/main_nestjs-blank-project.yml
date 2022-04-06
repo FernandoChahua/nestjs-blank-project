@@ -60,3 +60,4 @@ jobs:
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_2A777DA42B1A4239BEB12E01161B01FD }}
           package: .
+          startUpCommand: 'node dist/main.js'
