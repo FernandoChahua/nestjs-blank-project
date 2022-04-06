@@ -9,4 +9,18 @@ export class AppController {
   getHello(): string {
     return this.appService.getHello();
   }
+
+  @Get('api/test')
+  getTest1(){
+    return {
+      message: 'Hola soy api/test1 :D.'
+    };
+  }
+
+  @Get('api/prod')
+  getProd(){
+    return {
+      message: 'Hola soy api/prod :D.'
+    };
+  }
 }
